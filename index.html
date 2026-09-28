@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Nexus Bet · Preview</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+body{font-family:Tahoma,Vazirmatn,system-ui,sans-serif;background:radial-gradient(1200px 600px at 50% -10%,#2a1840 0%,#0f0b18 55%);color:#f5f0ff}
+.wrap{max-width:480px;margin:0 auto;padding:14px 14px 88px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.logo{font-size:22px;font-weight:800;color:#f5c542}
+.bal{background:#1c122a;padding:6px 12px;border-radius:8px;border:1px solid #ffffff14;font-size:13px}
+.nav{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;padding-bottom:4px}
+.nav span{flex:0 0 auto;padding:8px 14px;border-radius:999px;background:#ffffff0a;border:1px solid #ffffff14;font-size:13px}
+.nav span.on{background:#22c55e22;border-color:#22c55e55;color:#86efac}
+.card{background:#1c122ad9;border:1px solid #ffffff14;border-radius:12px;padding:14px;margin-bottom:12px}
+.meta{display:flex;justify-content:space-between;font-size:12px;color:#9b8fb0;margin-bottom:8px}
+.live{color:#22c55e}
+.teams{display:flex;justify-content:space-between;font-weight:700;margin-bottom:12px;gap:8px}
+.odds{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.odds button{background:#0f0b18;border:1px solid #ffffff18;border-radius:8px;padding:10px 6px;color:#f5f0ff;cursor:pointer}
+.odds button:active{transform:scale(.97)}
+.odds .l{font-size:11px;color:#9b8fb0}
+.odds .o{font-weight:700;color:#f5c542;margin-top:2px}
+.bottom{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:#120c1cee;border-top:1px solid #ffffff12;padding:10px 8px calc(10px + env(safe-area-inset-bottom));backdrop-filter:blur(10px)}
+.bottom a{color:#9b8fb0;font-size:11px;text-align:center;text-decoration:none}
+.bottom a.on{color:#86efac}
+.note{text-align:center;font-size:12px;color:#9b8fb0;margin-top:18px}
+.chip{display:inline-block;background:#22c55e22;color:#86efac;font-size:11px;padding:2px 8px;border-radius:999px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Nexus Bet</div>
+    <div class="bal">موجودی: ۰ USDT</div>
+  </header>
+  <div class="nav">
+    <span class="on">مسابقات</span>
+    <span>کرش</span>
+    <span>کیف پول</span>
+    <span>VIP</span>
+    <span>حساب</span>
+  </div>
+
+  <div class="card">
+    <div class="meta"><span class="live">● زنده · لیگ برتر</span><span class="live">۶۷′</span></div>
+    <div class="teams"><span>پرسپولیس</span><span>۱ — ۱</span><span>استقلال</span></div>
+    <div class="odds">
+      <button><div class="l">1</div><div class="o">2.10</div></button>
+      <button><div class="l">X</div><div class="o">3.20</div></button>
+      <button><div class="l">2</div><div class="o">3.40</div></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="meta"><span>● پیش‌رو · لالیگا</span><span>۲۰:۳۰</span></div>
+    <div class="teams"><span>رئال مادرید</span><span>—</span><span>بارسلونا</span></div>
+    <div class="odds">
+      <button><div class="l">1</div><div class="o">2.45</div></button>
+      <button><div class="l">X</div><div class="o">3.10</div></button>
+      <button><div class="l">2</div><div class="o">2.85</div></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="meta"><span class="live">● زنده · لیگ برتر انگلیس</span><span class="live">۳۴′</span></div>
+    <div class="teams"><span>منچسترسیتی</span><span>۲ — ۰</span><span>آرسنال</span></div>
+    <div class="odds">
+      <button><div class="l">1</div><div class="o">1.85</div></button>
+      <button><div class="l">X</div><div class="o">3.60</div></button>
+      <button><div class="l">2</div><div class="o">4.10</div></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="meta"><span>کرش · Provably Fair</span><span class="chip">Demo</span></div>
+    <div style="text-align:center;padding:18px 0">
+      <div style="font-size:42px;font-weight:800;color:#22c55e">1.00×</div>
+      <div style="color:#9b8fb0;font-size:13px;margin-top:6px">منتظر راند بعدی…</div>
+    </div>
+    <button style="width:100%;padding:12px;border:0;border-radius:10px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#04140a;font-weight:800;font-size:15px">ثبت شرط</button>
+  </div>
+
+  <p class="note">پیش‌نمایش استاتیک UI · بک‌اند/API روی این هاست نیست<br/>برای فول‌اپ: <code>pnpm dev</code> روی لوکال</p>
+</div>
+<nav class="bottom">
+  <a class="on" href="#">خانه</a>
+  <a href="#">مسابقات</a>
+  <a href="#">کرش</a>
+  <a href="#">کیف پول</a>
+  <a href="#">بیشتر</a>
+</nav>
+</body>
+</html>
